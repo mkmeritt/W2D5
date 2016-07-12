@@ -10,6 +10,15 @@
 
 @interface PaintView : UIView
 
+@property (nonatomic, assign) int startX;
+@property (nonatomic, assign) int startY;
 
+@property (nonatomic, assign) int endX;
+@property (nonatomic, assign) int endY;
+
+@property (nonatomic, strong) UIColor* colour;
+
+
+-(void)drawRect:(CGRect)rect;
 
 @end
